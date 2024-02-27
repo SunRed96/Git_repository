@@ -1,6 +1,6 @@
 Create Table dbo.SKU(
 ID int identity Constraint PK_SKU Primary key,
-Code as 's' + [ID] ,
+Code as 's' + convert(varchar,[ID]) ,
 [Name] nvarchar(30),
 
 UNIQUE(Code));
